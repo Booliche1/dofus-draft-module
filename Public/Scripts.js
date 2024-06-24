@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded', () => {
+    createClassGrid();
+    nextStep();
+    document.getElementById('reset-button').addEventListener('click', resetDraft);
+    document.getElementById('map-input').addEventListener('input', updateMapImage);
+});
+
 const classes = [
     'Ecaflip', 'Eniripsa', 'Iop', 'Cra', 'Feca', 'Sacrieur', 'Sadida', 
     'Osamodas', 'Enutrof', 'Sram', 'Xelor', 'Pandawa', 'Roublard', 
