@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dofus Draft Module</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dofus Draft Module</h1>
+        <div class="draft">
+            <div class="team">
+                <h2>
+                    <input type="text" id="teamA-name" value="Team A" oninput="adjustInputWidth(this)" onchange="updateTeamName('A')" placeholder="Team A">
+                </h2>
+                <button id="select-teamA" onclick="selectTeam('A')">Sélectionner Team A</button>
+                <div class="picks-section">
+                    <h3>Picks</h3>
+                    <div class="picks" id="teamA-picks"></div>
+                </div>
+                <div class="bans-section">
+                    <h3>Bans</h3>
+                    <div class="bans" id="teamA-bans"></div>
+                </div>
+            </div>
+            <div class="team">
+                <h2>
+                    <input type="text" id="teamB-name" value="Team B" oninput="adjustInputWidth(this)" onchange="updateTeamName('B')" placeholder="Team B">
+                </h2>
+                <button id="select-teamB" onclick="selectTeam('B')">Sélectionner Team B</button>
+                <div class="picks-section">
+                    <h3>Picks</h3>
+                    <div class="picks" id="teamB-picks"></div>
+                </div>
+                <div class="bans-section">
+                    <h3>Bans</h3>
+                    <div class="bans" id="teamB-bans"></div>
+                </div>
+            </div>
+        </div>
+        <div class="map-section">
+            <h2>Map</h2>
+            <input type="text" id="map-input" placeholder="Enter map code (e.g., A1)" onchange="updateMapImage()">
+            <img id="map-image" src="" alt="Map Image" style="display:none;">
+        </div>
+        <div class="controls">
+            <button id="reset-button">Reset Draft</button>
+            <button id="random-draft-button" onclick="generateRandomDraft()">Draft Aléatoire</button>
+        </div>
+        <div class="selection" id="selection-area">
+            <h3 id="selection-title">Team A choisi une classe à <span class="ban-text">BAN</span></h3>
+            <div id="class-grid" class="class-grid"></div>
+        </div>
+        <div id="results-section" class="results-section" style="display: none;">
+            <h2>Résultats de la Draft</h2>
+            <div class="results-container">
+                <div class="team-result">
+                    <h2 id="result-teamA-name">Team A</h2>
+                    <div class="picks" id="teamA-result-picks"></div>
+                </div>
+                <div class="team-result">
+                    <h2 id="result-teamB-name">Team B</h2>
+                    <div class="picks" id="teamB-result-picks"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>
+            Mention Légale<br>
+            Module de Draft Booliche<br>
+            Créé par Booliche en 2024, ce module est destiné à un usage ludique et comme support d'affichage de stream. Usage personnel uniquement, reproduction ou utilisation commerciale interdite sans accord explicite. Booliche décline toute responsabilité pour les dysfonctionnements ou dommages liés à son utilisation. Contact : <a href="mailto:boolichemenalt1@gmail.com">boolichemenalt1@gmail.com</a>
+        </p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

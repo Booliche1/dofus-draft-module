@@ -1,0 +1,200 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.draft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team {
+    width: 45%;
+    text-align: center;
+}
+
+.team button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #333333;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.picks-section, .bans-section {
+    margin-top: 10px;
+}
+
+.picks img {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.bans img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.map-section {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-section img {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #333333;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.selection {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.class-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class-grid img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.class-grid img.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+input[type="text"] {
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    background: none;
+    color: #ffffff;
+    width: auto;
+    min-width: 100px;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.ban-text {
+    color: red;
+    font-weight: bold;
+}
+
+.pick-text {
+    color: green;
+    font-weight: bold;
+}
+
+.results-section {
+    margin-top: 40px;
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-align: center;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-result {
+    width: 45%;
+}
+
+.team-result .picks {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.team-result .picks img {
+    width: 150px; 
+    height: 450px; 
+    margin: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+
+}
+
+.footer {
+    background-color: #1e1e1e;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
